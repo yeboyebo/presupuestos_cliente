@@ -1,0 +1,81 @@
+{
+    "modifications": [
+        {
+            "type": "insertAfterNode",
+            "path": "/layout/root",
+            "value": {
+                "formRecordLineaspresupuestoscli": {
+                    "prefix": "lineaspresupuestoscli",
+                    "componente": "YBForm",
+                    "class": "claseGrid",
+                    "submit": "update",
+                    "success": [
+                        {
+                            "slot": "return"
+                        }
+                    ],
+                    "groupbox": "",
+                    "return": true,
+                    "fields": {
+                        "gb__articulo": {
+                            "title": "Artículo",
+                            "fields": {
+                                "referencia": {},
+                                "descripcion": {}
+                            }
+                        },
+                        "gb__impuestos": {
+                            "title": "Impuestos",
+                            "fields": {
+                                "codimpuesto": {},
+                                "iva": {
+                                    "disabled": true
+                                },
+                                "recargo": {
+                                    "disabled": true
+                                },
+                                "irpf": {}
+                            }
+                        },
+                        "gb__cantidad": {
+                            "title": "Cantidad",
+                            "fields": {
+                                "cantidad": {},
+                                "pvpunitario": {},
+                                "pvpsindto": {
+                                    "disabled": true
+                                },
+                                "dtolineal": {},
+                                "dtopor": {},
+                                "gb__": {
+                                    "title": "",
+                                    "fields": {
+                                        "pvptotal": {
+                                            "disabled": true
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "exclude": {}
+                }
+            }
+        },
+        {
+            "type": "deleteNode",
+            "path": "/initValidation",
+            "value": null
+        },
+        {
+            "type": "deleteNode",
+            "path": "/focus",
+            "value": null
+        },
+        {
+            "type": "deleteNode",
+            "path": "/drawIf",
+            "value": null
+        }
+    ]
+}
