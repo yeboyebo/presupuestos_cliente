@@ -1,0 +1,24 @@
+{
+    "modifications": {
+        "deleteFile": [],
+        "patchScript": [],
+        "patchJson": [
+            {
+                "name": "urls.json",
+                "path": "config/"
+            },
+            {
+                "name": "registros.json",
+                "path": "config/"
+            }
+        ],
+        "addFile": [],
+        "replaceFile": [
+            {
+                "name": "dependencias.json",
+                "path": "config/"
+            }
+        ]
+    },
+    "name": "presupuestos_cliente"
+}
