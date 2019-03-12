@@ -6,6 +6,7 @@
             "value": {
                 "NAME": "facturacion",
                 "TEXT": "FACTURACION",
+                "URL": "facturacion",
                 "ICON": "dashboard",
                 "VISIBLE": true,
                 "COLOR": "rgb(170, 30, 30)"
